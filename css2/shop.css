@@ -1,0 +1,116 @@
+
+
+body{
+    width:100%;
+    margin-left: -1px;
+    list-style-type: none;
+}
+
+.box{
+    display: flex;           /*弹性布局*/
+    flex-direction: row;     /*沿水平主轴从左向右排列*/
+    width:100%;             
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    top: 0px;
+    width:100%;
+    height:50px;
+    background-color: white;   
+    position: fixed;        /*头部固定*/
+    box-shadow: 0 7px 5px -5px #333; /*底部阴影部分*/
+
+}   
+header span{
+
+    margin-left: 35px;
+    font-size: 14px;
+    color:aqua;
+}
+
+nav{
+   position:  fixed;
+   top:51px;
+   width:100%;
+   height:25px;
+   margin-left: 0px;
+   background-color: rgb(104, 107, 105);
+   color: white;
+   
+}
+nav span{
+    font-size: 8px;
+   font-family: "Microsoft YaHei",sans-serif;
+}
+
+main{
+    margin-top: 75px;
+    padding-bottom: 60px;   /*防止底部栏遮挡一部分图片*/
+}
+main p,li{
+    font-size: 2px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+main img{
+    display: block; /*图片单独占据一行 图片大小为盒子大小*/
+    width:100%;
+}
+main ul{
+    margin-top:0px;
+    
+}
+
+.imgbox{
+    padding:5px;
+}
+#imgbg{
+    background-color: #bbbbbb;
+    padding-bottom: 1px;        /*图片和文字之间的边框操作,通过填充图片底部实现边框的效果*/
+    
+}
+.imgcontainer{
+   margin-bottom: 20px;         /*填充div底部实现间隔效果*/
+   border:1px solid #dddddd;
+}
+
+#imgcontainer1{
+    width:8px;        /*列表样式*/
+    height:8px;
+    padding: 4px;
+}
+footer{
+    width:100%;      /*底部栏固定*/
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+footer ul li img{
+    width:20%;
+    height:20px;
+    padding:10px;
+    overflow: hidden;
+}
+
+[class*='item-']                 /*flex布局*/
+{
+    border:6px solid white;
+    height:auto;
+    margin-left: 4px;
+}
+.item-0{flex:1;}
+.item-1{flex:1 1 100% ;}
+.item-2{flex:1 1 50%;}
+.item-3{flex:1 1 33.3% ;}
+.item-4{flex:1 1 25%; }
+
+
+a:hover{
+    filter: drop-shadow(0 0 red); /*图片点击时，通过滤镜实现图标的颜色变化(转换的图片阴影与原图重合*/
+    
+}
