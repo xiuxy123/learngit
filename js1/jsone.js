@@ -1,6 +1,5 @@
 
-
- window.onload = function () {
+window.onload = function () {
      
     var url = "province.json"
     var request = new XMLHttpRequest();   //运用request对象访问本地数据
